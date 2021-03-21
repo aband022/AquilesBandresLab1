@@ -9,12 +9,23 @@ import edu.fiu.sysdesign.SelfCheckCapable;
  * @author aband
  *
  */
-public class Car implements SelfCheckCapable {
+public class LED implements SelfCheckCapable {
 
-	boolean Switch1;
-    String IPaddress;
-	int power_voltage;
-	int Buzzer;
+	String LED0_color;
+	String LED1_color;
+	String LED2_color;
+	String LED3_color;
+	String LED4_color;
+	String LED5_color;
+	String LED6_color;
+	String LED7_color;
+	
+	/**
+	 * This is DisplayLedShow method - It initiates LedShow on the Car
+	 */
+	void DisplayLedShow() {
+		
+	}
 	
 	@Override
 	public String getComponentName() {

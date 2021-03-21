@@ -9,15 +9,8 @@ import edu.fiu.sysdesign.SelfCheckCapable;
  * @author aband
  *
  */
-public class Car implements SelfCheckCapable {
+public class ObstacleAvoidance implements SelfCheckCapable {
 
-	int Switch1;
-	string IPaddress;
-	int power_voltage;
-	int Buzzer;
-	
-	
-	
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub

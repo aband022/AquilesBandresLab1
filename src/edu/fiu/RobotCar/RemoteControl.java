@@ -42,6 +42,8 @@ public class RemoteControl {
 		// TODO Auto-generated method stub
 		Car  myCar = new Car();
 		myCar.runSelfCheck();
+		LED  myLED = new LED();
+		myLED.runSelfCheck();
 	}
 
 }

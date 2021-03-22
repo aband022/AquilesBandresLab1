@@ -51,8 +51,7 @@ public class RemoteControl {
 		ObstacleAvoidance  myObstacleAvoidance = new ObstacleAvoidance();
 		myObstacleAvoidance.runSelfCheck();
 		System_check  mySystem_check = new System_check();
-		mySystem_check.runSelfCheck();
-		
+		mySystem_check.runSelfCheck();		
 	}
 
 }

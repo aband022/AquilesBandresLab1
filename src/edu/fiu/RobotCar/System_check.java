@@ -27,7 +27,7 @@ public class System_check implements SelfCheckCapable {
 	 @Override
  	public String getComponentName() {
  		// TODO Auto-generated method stub
- 		return "MY Systems Check Function";
+ 		return "MY Systems Check Method";
  	}
 
  	@Override

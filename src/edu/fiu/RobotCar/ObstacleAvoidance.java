@@ -46,7 +46,7 @@ public class ObstacleAvoidance implements SelfCheckCapable {
             @Override
         	public String getComponentName() {
         		// TODO Auto-generated method stub
-        		return "MY Obstacle Avoidance Function";
+        		return "MY Obstacle Avoidance Method";
         	}
 
         	@Override

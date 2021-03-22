@@ -44,6 +44,15 @@ public class RemoteControl {
 		myCar.runSelfCheck();
 		LED  myLED = new LED();
 		myLED.runSelfCheck();
+		Camera  myCamera = new Camera();
+		myCamera.runSelfCheck();
+		Motor  myMotor = new Motor();
+		myMotor.runSelfCheck();
+		ObstacleAvoidance  myObstacleAvoidance = new ObstacleAvoidance();
+		myObstacleAvoidance.runSelfCheck();
+		System_check  mySystem_check = new System_check();
+		mySystem_check.runSelfCheck();
+		
 	}
 
 }

@@ -4,6 +4,7 @@
 package edu.fiu.RobotCar;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
 
 /**
  * @author aband
@@ -42,22 +43,22 @@ public class ObstacleAvoidance implements SelfCheckCapable {
             	
             }
 	
-	@Override
-	public String getComponentName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+            @Override
+        	public String getComponentName() {
+        		// TODO Auto-generated method stub
+        		return "MY Obstacle Avoidance Function";
+        	}
 
-	@Override
-	public boolean selfCheck() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+        	@Override
+        	public boolean selfCheck() {
+        		// TODO Auto-generated method stub
+        		return SelfCheckUtils.randomCheck(0.25);
+        	}
 
-	@Override
-	public boolean runSelfCheck() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+        	@Override
+        	public boolean runSelfCheck() {
+        		// TODO Auto-generated method stub
+        		return SelfCheckUtils.basicSelfCheckRunner(this);
+        	}
 
 }

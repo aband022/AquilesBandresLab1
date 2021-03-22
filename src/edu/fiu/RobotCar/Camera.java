@@ -33,7 +33,7 @@ public class Camera implements SelfCheckCapable {
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Car Camera";
+		return "My Camera";
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class Camera implements SelfCheckCapable {
 	@Override
 	public boolean runSelfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.basicSelfCheckRunner(This);
+		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
 }

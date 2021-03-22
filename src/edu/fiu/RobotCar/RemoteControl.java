@@ -3,15 +3,14 @@
  */
 package edu.fiu.RobotCar;
 
-import edu.fiu.sysdesign.SelfCheckCapable;
-
 /**
  * @author aband
  *
  */
-public class RemoteControl implements SelfCheckCapable {
+public class RemoteControl {
+
 	boolean ConnectionEstablished;
-	
+
 	/**
 	 *  This is the SelfDriving method - It sends signal to the car to enable
 	 *  self driving and obstacle avoidance capability
@@ -35,25 +34,14 @@ public class RemoteControl implements SelfCheckCapable {
 			void SetBuzzer() {
 				
 			}			
-		
-		
-		
-	@Override
-	public String getComponentName() {
+					
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean selfCheck() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean runSelfCheck() {
-		// TODO Auto-generated method stub
-		return false;
+		Car  myCar = new Car();
+		myCar.runSelfCheck();
 	}
 
 }

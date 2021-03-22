@@ -4,6 +4,7 @@
 package edu.fiu.RobotCar;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
 
 /**
  * @author aband
@@ -19,19 +20,19 @@ public class Car implements SelfCheckCapable {
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "My Car";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return false;
+		return SelfCheckUtils.randomCheck(0.25);
 	}
 
 	@Override
 	public boolean runSelfCheck() {
 		// TODO Auto-generated method stub
-		return false;
+		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
 }
